@@ -1,73 +1,96 @@
-# Welcome to your Lovable project
+# Assist Agent React
 
-## Project info
+## Problem Statement
+This project addresses the need for an interactive AI assistant interface with proper markdown rendering capabilities. It provides a user-friendly chat interface that correctly displays formatted content, including proper spacing, bullet points, and hierarchical structure.
 
-**URL**: https://lovable.dev/projects/bb390b2b-caac-429a-83d3-527ddd2130c1
+## Detailed Proposal & Prototype Plan
+The application consists of a React frontend and a FastAPI backend that work together to provide an AI assistant experience:
 
-## How can I edit this code?
+1. Frontend: React application with TypeScript and Tailwind CSS for styling
+2. Backend: FastAPI server with MongoDB for chat storage
+3. Communication: RESTful API endpoints for chat interaction
+4. Features: Markdown rendering, theme toggling, and responsive design
 
-There are several ways of editing your application.
+## Project Structure
+The project is organized into two main directories:
+- `frontend/`: Contains all React frontend code and assets
+- `backend/`: Contains the FastAPI backend server and database integration
 
-**Use Lovable**
+## Features Implemented
+- Chat interface with message history
+- Proper markdown rendering for all messages
+- Theme toggle (light/dark mode)
+- Responsive design for mobile and desktop
+- Backend API integration
+- Search functionality with results display
+- Sidebar for navigation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bb390b2b-caac-429a-83d3-527ddd2130c1) and start prompting.
+## Tech Stack Used
+- **Frontend**:
+  - React with TypeScript
+  - Vite as build tool
+  - Tailwind CSS for styling
+  - React Markdown for content rendering
+  - React Router for navigation
+  
+- **Backend**:
+  - FastAPI (Python)
+  - MongoDB for data storage
+  - Uvicorn as ASGI server
+  - LangChain for AI integration
 
-Changes made via Lovable will be committed automatically to this repo.
+## Contribution Details
 
-**Use your preferred IDE**
+## B. Amarendra Nadh:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Designed and integrated the AI agent using LangChain
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Tuned conversational flow for better context handling
 
-Follow these steps:
+Worked on connecting the backend to the assistant logic
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Ruchir:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Implemented the initial FastAPI server setup
 
-# Step 3: Install the necessary dependencies.
-npm i
+Configured MongoDB integration for storing chat history
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Developed base RESTful API endpoints for communication
 
-**Edit a file directly in GitHub**
+## A. Nikhilesh:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Extended backend functionality with search API endpoints
 
-**Use GitHub Codespaces**
+Improved error handling and backend request validation
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Optimized database queries for faster response times
 
-## What technologies are used for this project?
+## Vaishnavi:
 
-This project is built with:
+Built the frontend chat interface with React + TypeScript
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Integrated React Markdown for proper message rendering
 
-## How can I deploy this project?
+Implemented responsive design for mobile and desktop
 
-Simply open [Lovable](https://lovable.dev/projects/bb390b2b-caac-429a-83d3-527ddd2130c1) and click on Share -> Publish.
+## Varshini:
 
-## Can I connect a custom domain to my Lovable project?
+Developed the sidebar navigation and theme toggle (light/dark mode)
 
-Yes, you can!
+Integrated API calls with the frontend to display results
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Fixed UI/UX issues and polished styling with Tailwind CSS
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Getting Started
+1. Clone the repository
+2. Install frontend dependencies: `cd frontend && npm install`
+3. Install backend dependencies: `cd backend && pip install -r requirements.txt`
+4. Start the frontend: `cd frontend && npm run dev`
+5. Start the backend: `cd backend && python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000`
+6. Open your browser to http://localhost:8080
+
+## Recent Fixes
+- Fixed markdown rendering in message bubbles
+- Resolved CSS linting errors for Tailwind directives
+- Fixed backend connection issues
+- Reorganized project structure for better maintainability
