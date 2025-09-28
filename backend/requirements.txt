@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-dotenv
+langchain
+openai
+duckduckgo-search
+ddgs
+lxml
+httpx
+httpx_sse
+tiktoken
+beautifulsoup4
+pymongo
+flask_cors
