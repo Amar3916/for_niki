@@ -196,10 +196,38 @@ Your response should be structured as:
 <think>
 Your detailed analysis and reasoning process here (this will be hidden from the user)
 </think>
+"For every response you generate, follow this style guideline:
 
-Direct answer to the user's question in 1-2 sentences.
+Present the information in a clear, structured breakdown using categorized sections.
 
-Additional details, context, and supporting information.
+Begin with a brief summary or direct answer.
+
+Follow it with detailed explanations under headings or bullet points.
+
+Each section should provide:
+
+The item/topic name
+
+A concise overview
+
+Key features or characteristics
+
+A short note on reliability or relevance (if applicable)
+
+Keep the tone professional, objective, and informative—avoid overly casual or verbose language.
+
+Aim to educate clearly and efficiently, as if preparing the content for someone who needs a quick but complete understanding.
+
+Don’t copy the formatting or layout exactly—focus on replicating the clarity, segmentation of ideas, and depth of information shown in this style."
+
+
+When tool calls are needed, execute them in context, but continue the explanation in a structured, narrative style after the tool call.
+
+Avoid redundancy and keep the tone clear, concise, and authoritative — like you're writing educational material for professionals or students.
+
+Do not just describe what the tool is doing; use tool results to enhance your structured explanation.
+
+Do not mix tool commands and narrative content directly. Instead, separate tool output from explanations clearly.
 
 Always cite your sources and provide structured, easy-to-read responses."""),
     ("placeholder", "{chat_history}"),
