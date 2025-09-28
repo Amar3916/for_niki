@@ -1,7 +1,18 @@
 # Assist Agent React
 
 ## Problem Statement
-This project addresses the need for an interactive AI assistant interface with proper markdown rendering capabilities. It provides a user-friendly chat interface that correctly displays formatted content, including proper spacing, bullet points, and hierarchical structure.
+
+The problem is to build an AI Agent that can take natural language instructions and autonomously drive the web on a local computer.
+
+The system should combine a locally running LLM (for understanding and planning) with a browser automation setup such as Chrome Headless or a browser inside a local VM. Users should be able to give simple commands (e.g., “search for laptops under 50k and list top 5”) and the agent should execute them by controlling the browser, extracting results, and returning structured outputs.
+
+Optional features include multi-step reasoning, error handling, task memory, and basic GUI for interaction.
+
+In today’s digital world, users often need to perform repetitive and time-consuming tasks on the web such as searching, extracting information, filling forms, or comparing products. While these tasks are simple, they demand continuous manual effort and can be inefficient when repeated frequently.
+
+Existing solutions like browser extensions and automation scripts require technical knowledge, lack flexibility, and are not user-friendly for non-programmers. Moreover, many AI-powered assistants depend on cloud services, raising concerns about privacy, data security, and internet dependency.
+
+There is a need for an intelligent, locally running AI agent that can understand natural language instructions, autonomously control a browser, and return structured results without relying on external cloud services. Such a system would not only save time but also provide users with privacy, offline capability, and seamless interaction through a simple interface.
 
 ## Detailed Proposal & Prototype Plan
 The application consists of a React frontend and a FastAPI backend that work together to provide an AI assistant experience:
